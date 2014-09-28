@@ -31,4 +31,9 @@ class online-migration ($folder="/root/om/") {
 	   	owner    => root,
 		ensure   => directory;
     }
+
+    package {
+   	"python-argparse":
+		ensure  => installed
+   }
 }
