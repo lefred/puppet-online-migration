@@ -1,4 +1,4 @@
-class online-migration ($folder="/root/om/") {
+class online_migration ($folder="/root/om/") {
     
     case $::osfamily {
           'RedHat': {
@@ -21,7 +21,7 @@ class online-migration ($folder="/root/om/") {
     file {
         "/usr/bin/online-migration.py":
 	   	owner    => root,
-                source   => 'puppet:///modules/online-migration/online-migration.py',
+                source   => 'puppet:///modules/online_migration/online-migration.py',
                 mode     => 755,
 		ensure   => present;
     }
