@@ -1,0 +1,1 @@
+OM_IGNORE_TABLE::create table restaurant( id int auto_increment primary key, name varchar(50), CityID int, rate decimal(2,2)); 

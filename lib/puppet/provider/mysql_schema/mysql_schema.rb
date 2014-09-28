@@ -1,7 +1,7 @@
 Puppet::Type.type(:mysql_schema).provide(:mysql_schema) do
    desc "Provides access to online-migration"
 
-   optional_commands :omcmd => "/usr/local/bin/online-migration.py"
+   optional_commands :omcmd => "/usr/bin/online-migration"
 
    def create
        info("performing the migration")
