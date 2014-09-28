@@ -31,7 +31,7 @@ server_password = ''
 
 server_connection = "%s:%s@%s:%s" % (server_user, server_password,
                                      server_host, server_port)
-server_connection = ""
+#server_connection = ""
 
 logging.basicConfig(format = "%(levelname)s : %(message)s", level = logging.INFO)
 
