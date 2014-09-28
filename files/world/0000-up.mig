@@ -10,7 +10,7 @@ CREATE TABLE `City` (
   PRIMARY KEY (`ID`),
   KEY `CountryCode` (`CountryCode`),
   CONSTRAINT `city_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `Country` (`Code`)
-) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=latin1
+) ENGINE=InnoDB AUTO_INCREMENT=4080 DEFAULT CHARSET=latin1;
 #table: Country
 CREATE TABLE `Country` (
   `Code` char(3) NOT NULL DEFAULT '',
@@ -29,7 +29,7 @@ CREATE TABLE `Country` (
   `Capital` int(11) DEFAULT NULL,
   `Code2` char(2) NOT NULL DEFAULT '',
   PRIMARY KEY (`Code`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 #table: CountryLanguage
 CREATE TABLE `CountryLanguage` (
   `CountryCode` char(3) NOT NULL DEFAULT '',
@@ -39,4 +39,4 @@ CREATE TABLE `CountryLanguage` (
   PRIMARY KEY (`CountryCode`,`Language`),
   KEY `CountryCode` (`CountryCode`),
   CONSTRAINT `countryLanguage_ibfk_1` FOREIGN KEY (`CountryCode`) REFERENCES `Country` (`Code`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
